@@ -46,7 +46,7 @@
     --background-image: var(--wallpaper);
     --bg-opacity: 100%;
     /*bg dev suggestions*/
-    --wallpaper: url("https://warrayquipsome.github.io/Chillax/Wallpapers/chillax-default.png");
+    --wallpaper: url("https://preview.redd.it/couldnt-find-a-1440p-screenshot-of-the-new-ending-screen-v0-rn6tko6ywqe81.png?width=1080&crop=smart&auto=webp&s=f04575478c7959f100da32c3e8ac81420b013498");
     /*modern background selection*/
     --modern-dark-bg: url("https://warrayquipsome.github.io/Chillax/Wallpapers/modern-dark-bg.png");
     --modern-light-bg: url("https://warrayquipsome.github.io/Chillax/Wallpapers/modern-light-bg.png");
@@ -74,7 +74,7 @@
 
 /*roots*/ /*both dark and light*/
 :root {
-    --user-name: "King";
+    --user-name: "Aleph";
     --edited-message: " EDITED ✎ ";
     --font-name: Poppins;
     --font-size: 13px;
@@ -100,9 +100,9 @@
 
     /* For accent color to take full effect must need to change both */
     /* chillax colours rgb */
-    --accentcolor: 251, 84, 84;
+    --accentcolor: 230, 90, 31;
     /* chillax colours hex */
-    --accentcolorV2: #fb5454;
+    --accentcolorV2: #e65a1f;
 
 
     /* settings modal root */
@@ -116,7 +116,7 @@
 
     /* placeholder texts/values */
     /* input fields */
-    --chillax-input-field: "Life is so much easier when you just take a moment to chill";
+    --chillax-input-field: "You got the makings of greatness in you, but you got to take the helm and chart your own course.";
     /* input fields  when the channel is locked*/
     --chillax-input-field-locked: "Unfortunately, you can't chill in this channel";
     /* typing indicator: when a single person is typing */
@@ -177,14 +177,14 @@
     --deprecated-panel-background: transparent;
 }
 
-/*!*friends grid banner colour*!*/
-/*.theme-dark {*/
-/*    --FG-cards-banner-background: transparent !important;*/
-/*}*/
+/* !*friends grid banner colour*!*/
+.theme-dark {
+    --FG-cards-banner-background: transparent !important;
+}
 
-/*.theme-light {*/
-/*    --FG-cards-banner-background: transparent !important;*/
-/*}*/
+.theme-light {
+    --FG-cards-banner-background: transparent !important;
+}
 
 
 /*Permissions*/
