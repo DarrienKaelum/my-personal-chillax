@@ -5,93 +5,83 @@
     --transitionspeed: 0.25s;
 }
 
-.c322aadb96ff59c9-searchBar {
+.searchBar_i16Ad0 {
     border: none !important;
+    display: flex !important;
+    flex-direction: row-reverse !important;
+    align-items: center !important;
+    padding: 0 4px !important;
+    box-sizing: border-box !important;
 }
 
-.c322aadb96ff59c9-search:not(.c322aadb96ff59c9-open) .c322aadb96ff59c9-searchBar {
-    width: 30px;
-    transition: var(--transitionspeed);
+/* Collapse the outer wrapper and inner bar together */
+.container_ybUK7Z.themed_ybUK7Z .search_bWCaDq {
+    order: -1 !important;
+    flex: 0 0 auto !important;
+    width: 34px !important;
+    transition: width var(--transitionspeed) ease !important;
+
+}
+
+.search_i16Ad0:not(.open_i16Ad0) .searchBar_i16Ad0 {
+    width: 34px;
+    transition: width var(--transitionspeed) ease, background-color var(--transitionspeed) ease;
     background-color: transparent;
 }
 
-.public-DraftEditorPlaceholder-root {
-    transition: color var(--transitionspeed) ease;
+/* Shrink the text editor completely when collapsed so it doesn't push the icon out */
+.search_i16Ad0:not(.open_i16Ad0):not(:hover):not(:focus-within) .editor_uNafB1 {
+    width: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: hidden !important;
 }
 
-.c322aadb96ff59c9-search:not(.c322aadb96ff59c9-open):not(:hover) .public-DraftEditorPlaceholder-root {
-    color: #0000;
+/* Expand both wrappers when hovered, focused, or open */
+.container_ybUK7Z.themed_ybUK7Z .search_bWCaDq:hover,
+.container_ybUK7Z.themed_ybUK7Z .search_bWCaDq:focus-within,
+.container_ybUK7Z.themed_ybUK7Z .search_bWCaDq:has(.open_i16Ad0) {
+    width: 244px !important;
 }
 
-.c322aadb96ff59c9-search:not(.c322aadb96ff59c9-open):hover .c322aadb96ff59c9-searchBar {
+.search_i16Ad0:not(.open_i16Ad0):hover .searchBar_i16Ad0,
+.search_i16Ad0:focus-within .searchBar_i16Ad0 {
     width: 244px;
     background-color: var(--background-tertiary);
 }
 
-.c322aadb96ff59c9-search:not(.c322aadb96ff59c9-open) .iconContainer_effbe2 {
+/* Hide placeholder text when collapsed */
+[data-slate-placeholder="true"] {
+    transition: color var(--transitionspeed) ease, opacity var(--transitionspeed) ease;
+}
+
+.search_i16Ad0:not(.open_i16Ad0):not(:hover):not(:focus-within) [data-slate-placeholder="true"] {
+    color: #0000 !important;
+    opacity: 0 !important;
+}
+
+/* Search icon scaling and color transitions */
+.icon_i16Ad0 {
+    flex-shrink: 0 !important;
+}
+
+.search_i16Ad0:not(.open_i16Ad0) .iconContainer_v966Ys {
     transform: scale(1.1);
     transition: var(--transitionspeed);
 }
 
-.c322aadb96ff59c9-search:not(.c322aadb96ff59c9-open):hover .iconContainer_effbe2 {
+.search_i16Ad0:not(.open_i16Ad0):hover .iconContainer_v966Ys,
+.search_i16Ad0:focus-within .iconContainer_v966Ys {
     transform: scale(1);
 }
 
-.c322aadb96ff59c9-search:not(.c322aadb96ff59c9-open) .icon_effbe2 {
+.search_i16Ad0:not(.open_i16Ad0) .icon_v966Ys {
     color: var(--text-normal);
 }
 
-.c322aadb96ff59c9-search:not(.c322aadb96ff59c9-open):hover .icon_effbe2 {
+.search_i16Ad0:not(.open_i16Ad0):hover .icon_v966Ys,
+.search_i16Ad0:focus-within .icon_v966Ys {
     color: var(--text-muted);
-}
-
-.container__9293f.themed__9293f .search__49676 {
-    order: -1 !important;
-}
-
-/*threads background fix*/
-.container_d9c882 {
-    backdrop-filter: blur(15px) !important;
-}
-
-html.theme-dark .container_d9c882 {
-    background: #181a1da6 !important;
-}
-
-html.theme-light .container_d9c882 {
-    background: rgb(223, 223, 223);
-}
-
-/* threads item hover */
-.container__6764b:hover {
-    background-color: #181a1d99;
-}
-
-/*pins / inbox background fix*/
-.header_e8b59c {
-    background-color: #0000;
-}
-
-.messagesPopoutWrap_e8b59c,
-.recentMentionsPopout__95796,
-.drawerSizingWrapper__08434 {
-    backdrop-filter: blur(15px) !important;
-}
-
-html.theme-dark .messagesPopoutWrap_e8b59c,
-html.theme-dark .recentMentionsPopout__95796,
-html.theme-dark .drawerSizingWrapper__08434 {
-    background: rgba(0, 0, 0, 0.3) !important;
-}
-
-html.theme-dark .messageGroupWrapper_e8b59c {
-    background: #181a1da6;
-}
-
-html.theme-light .messagesPopoutWrap_e8b59c,
-html.theme-light .recentMentionsPopout__95796,
-html.theme-light .drawerSizingWrapper__08434 {
-    background: rgb(223, 223, 223) !important;
 }
 
 /* Fix buttons on pins items */
